@@ -1,0 +1,116 @@
+{
+  "network": {
+    "enabled": true,
+    "poll_interval_seconds": 2.0,
+    "baseline_existing_on_start": true,
+    "max_seen_connections": 10000
+  },
+  "process": {
+    "enabled": true,
+    "poll_interval_seconds": 5.0,
+    "baseline_existing_on_start": true,
+    "max_seen_processes": 5000,
+    "detail_lookup_enabled": true,
+    "detail_lookup_timeout_seconds": 2.5,
+    "suspicious_process_names": [
+      "mimikatz.exe",
+      "nmap.exe",
+      "masscan.exe",
+      "netcat.exe",
+      "nc.exe",
+      "psexec.exe",
+      "procdump.exe",
+      "pwdump.exe",
+      "secretsdump.py",
+      "hashcat.exe",
+      "hydra.exe"
+    ]
+  },
+  "auth": {
+    "windows_event_log_enabled": false,
+    "windows_event_log_interval_seconds": 20.0,
+    "windows_event_log_max_events": 40,
+    "baseline_existing_on_start": true,
+    "log_files": [],
+    "log_poll_interval_seconds": 2.0,
+    "log_failure_patterns": [
+      "failed password",
+      "authentication failure",
+      "invalid user",
+      "login failed",
+      "failed login",
+      "4625"
+    ]
+  },
+  "geoip": {
+    "enabled": true,
+    "database_path": "data/geoip_country_ranges.csv",
+    "cache_size": 20000,
+    "unknown_country_code": "ZZ",
+    "unknown_country_name": "Unknown"
+  },
+  "ip_intelligence": {
+    "enabled": true,
+    "provider": "ipwho.is",
+    "url_template": "https://ipwho.is/{ip}",
+    "timeout_seconds": 2.5,
+    "cache_size": 5000,
+    "queue_size": 1000,
+    "min_request_interval_seconds": 1.1
+  },
+  "llm": {
+    "enabled": true,
+    "provider": "lm_studio",
+    "url": "http://127.0.0.1:1234/api/v1/chat",
+    "model": "qwen2.5-coder-7b-instruct",
+    "api_token": "",
+    "timeout_seconds": 180.0,
+    "max_tokens": 700,
+    "temperature": 0.2
+  },
+  "policy": {
+    "allowlist_ips": [],
+    "blocklist_ips": [],
+    "allowlist_countries": [],
+    "blocklist_countries": [],
+    "allowlist_process_names": [],
+    "blocklist_process_names": []
+  },
+  "detection": {
+    "suspicious_ports": [
+      21,
+      23,
+      2323,
+      3389,
+      4444,
+      5555,
+      5900,
+      6667,
+      6697,
+      31337
+    ],
+    "port_scan_window_seconds": 60,
+    "port_scan_unique_ports": 8,
+    "connection_burst_window_seconds": 30,
+    "connection_burst_threshold": 25,
+    "brute_force_window_seconds": 300,
+    "brute_force_threshold": 5,
+    "process_burst_window_seconds": 30,
+    "process_burst_threshold": 18,
+    "alert_cooldown_seconds": 120
+  },
+  "output": {
+    "events_path": "logs/events.jsonl",
+    "alerts_path": "logs/alerts.jsonl",
+    "max_recent_events": 500,
+    "max_recent_alerts": 100,
+    "min_alert_severity": "low"
+  },
+  "dashboard": {
+    "enabled": true,
+    "refresh_seconds": 1.0
+  },
+  "ui": {
+    "theme": "light"
+  }
+}

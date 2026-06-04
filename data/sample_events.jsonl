@@ -1,0 +1,15 @@
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:00+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":21,"remote_ip":"203.0.113.55","remote_port":50100,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:03+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":22,"remote_ip":"203.0.113.55","remote_port":50101,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:06+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":80,"remote_ip":"203.0.113.55","remote_port":50102,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:09+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":135,"remote_ip":"203.0.113.55","remote_port":50103,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:12+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":139,"remote_ip":"203.0.113.55","remote_port":50104,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:15+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":443,"remote_ip":"203.0.113.55","remote_port":50105,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:18+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":445,"remote_ip":"203.0.113.55","remote_port":50106,"state":"ESTABLISHED","pid":1200}}
+{"kind":"network_connection","timestamp":"2026-01-01T12:00:21+00:00","source":"sample","attributes":{"protocol":"TCP","local_ip":"10.0.0.5","local_port":8080,"remote_ip":"203.0.113.55","remote_port":50107,"state":"ESTABLISHED","pid":1200}}
+{"kind":"auth_failure","timestamp":"2026-01-01T12:01:00+00:00","source":"sample","attributes":{"username":"admin","remote_ip":"198.51.100.20","reason":"bad password"}}
+{"kind":"auth_failure","timestamp":"2026-01-01T12:01:20+00:00","source":"sample","attributes":{"username":"admin","remote_ip":"198.51.100.20","reason":"bad password"}}
+{"kind":"auth_failure","timestamp":"2026-01-01T12:01:40+00:00","source":"sample","attributes":{"username":"admin","remote_ip":"198.51.100.20","reason":"bad password"}}
+{"kind":"auth_failure","timestamp":"2026-01-01T12:02:00+00:00","source":"sample","attributes":{"username":"admin","remote_ip":"198.51.100.20","reason":"bad password"}}
+{"kind":"auth_failure","timestamp":"2026-01-01T12:02:20+00:00","source":"sample","attributes":{"username":"admin","remote_ip":"198.51.100.20","reason":"bad password"}}
+{"kind":"process_start","timestamp":"2026-01-01T12:03:00+00:00","source":"sample","attributes":{"pid":4440,"image_name":"mimikatz.exe","session_name":"Console","memory":"12,000 K"}}
+
